@@ -19,3 +19,6 @@ $ sqlite3
 #Requirements
  - [Haskell stack](https://docs.haskellstack.org/en/stable/README/)
  - Sqlite3
+
+#Roadmap
+To mess around with the script there are really only two files you need to look at. Namely, `app/Main.hs` contains the driver code and `src/Lib.hs` contains the helper functions. 
