@@ -1,0 +1,15 @@
+Configuring direct-sqlite-2.3.19...
+Building direct-sqlite-2.3.19...
+Preprocessing library direct-sqlite-2.3.19...
+[1 of 4] Compiling Database.SQLite3.Bindings.Types ( .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Database/SQLite3/Bindings/Types.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Database/SQLite3/Bindings/Types.o )
+[2 of 4] Compiling Database.SQLite3.Bindings ( Database/SQLite3/Bindings.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Database/SQLite3/Bindings.o )
+[3 of 4] Compiling Database.SQLite3.Direct ( Database/SQLite3/Direct.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Database/SQLite3/Direct.o )
+
+Database/SQLite3/Direct.hs:147:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[4 of 4] Compiling Database.SQLite3 ( Database/SQLite3.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Database/SQLite3.o )
+Installing library in
+/Users/rushi/.stack/snapshots/x86_64-osx/lts-8.0/8.0.2/lib/x86_64-osx-ghc-8.0.2/direct-sqlite-2.3.19-HHlUsN8cUcIK9krg9k4o1U
+Registering direct-sqlite-2.3.19...
