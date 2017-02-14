@@ -13,6 +13,8 @@ To mess around with the resulting database:
 $ sqlite3
 > .open corpus.db
 > select * from corpus;
+> select distinct url from corpus;
+> select code from corpus where url="http://www.programcreek.com/java-api-examples/index.php?api=org.joda.time.DateTime";
 ...
 ```
 
