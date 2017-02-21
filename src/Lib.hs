@@ -2,11 +2,14 @@
 module Lib
     ( 
         codeOnPage, 
+        classURLs,
         insertIntoDatabase
     ) where
 
 import Text.HTML.Scalpel
 import Database.SQLite.Simple
+
+{- Scraping Part -}
 
 -- A scraper that will find all the 
 -- pre tags with the class pretty print
@@ -14,6 +17,17 @@ import Database.SQLite.Simple
 -- and thus return a list of strings
 codeOnPage :: Scraper String [String]
 codeOnPage = texts ("pre"  @: [hasClass "prettyprint"])
+
+
+-- A scraper that will find all the 
+-- anchor tags that are nested within li elements
+-- and take their URLS
+classURLs :: Scraper String [String]
+classURLs = chroots ("li" // "a") $ do 
+  href <- attr "href" anySelector
+  return href
+
+{- Database Part -}
 
 -- This code will take a URL (string) and a list of code-blocks (list of strings)
 -- and insert it into a sqlite3 database
