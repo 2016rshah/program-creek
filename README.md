@@ -2,7 +2,7 @@ Parses program creek for code snippets
 
 #Usage
 
-To scrape program creek change the queryURL to parse in `app/Main.hs` then run the following from the command line:
+To scrape program creek change the apis to parse in `app/Main.hs` then run the following from the command line:
 ```
 $ stack build
 $ stack exec program-creek-exe
